@@ -48,9 +48,9 @@ class _ProductPageState extends State<ProductPage> {
 
            if(widget.product.phoneNumber.startsWith("+255")){
            FlutterOpenWhatsapp.sendSingleMessage("${widget.product.phoneNumber}",  
-            "*Smart Fashion* Nahitaji Bidhaa... ");//widget.product.phoneNumber
+            "*Smart Market* Nahitaji Bidhaa... ");//widget.product.phoneNumber
            }else{
-             FlutterOpenWhatsapp.sendSingleMessage("+255"+"${widget.product.phoneNumber.substring(1)}", "*Smart Fashion* Nahitaji Bidhaa...");
+             FlutterOpenWhatsapp.sendSingleMessage("+255"+"${widget.product.phoneNumber.substring(1)}", "*Smart Market* Nahitaji Bidhaa...");
            }
            widget.model.countCalls('watsapp');
     

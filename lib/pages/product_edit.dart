@@ -235,7 +235,7 @@ class _ProductEditPageState extends State<ProductEditPage> {
                 : (error
                     ? Text(
                         "Sahihisha Kundi..!",
-                        style: TextStyle(color: Colors.pinkAccent),
+                        style: TextStyle(color: Colors.greenAccent),
                       )
                     : Text("Imehifadhiwa")),
             SizedBox(

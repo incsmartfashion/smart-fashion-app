@@ -23,7 +23,7 @@ with AutomaticKeepAliveClientMixin {
   PageController _tabController;
   /*for the buttons*/
   Color _colors = Colors.grey;
-  Color _selectedColor = Colors.pink[200];
+  Color _selectedColor = Colors.green[200];
   String selectedButton;
   String buttons;
   String fetchProductCategory;

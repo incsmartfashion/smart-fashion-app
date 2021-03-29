@@ -47,7 +47,7 @@ class _ProductsPageState extends State<ProductsPage> {
           preferredSize: Size.fromHeight(40.0),
           child: AppBar(
           centerTitle: true,
-          title: Text("Smart Fashion", style: TextStyle(color: Colors.black),),
+          title: Text("Smart Market", style: TextStyle(color: Colors.black),),
           backgroundColor: Color(0X222222),
           ),
       ),
@@ -66,14 +66,14 @@ class _ProductsPageState extends State<ProductsPage> {
         ],
         currentIndex: _selectedIndex,
         selectedLabelStyle: TextStyle(fontFamily: 'Raleway-Bold'),
-        selectedItemColor: Color(0XFFEF476F),
+        selectedItemColor: Color(0XFF4CAF50),//(0XFFEF476F),
         onTap: _onItemTapped,
       ),
       body: Center(
         
         child: _widgetOptions.elementAt(_selectedIndex),
       ),
-    );
+    ); 
   }
 
 }

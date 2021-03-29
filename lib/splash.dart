@@ -27,7 +27,7 @@ void initState() {
   @override
   Widget build(BuildContext context) {
   return new Scaffold(
-    backgroundColor: Colors.pink[200],
+    backgroundColor: Colors.green[200],
     body: new Center(
       child: new Image.asset('assets/icon/smartfashion.png',height: 150,),
     ),

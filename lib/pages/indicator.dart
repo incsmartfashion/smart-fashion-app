@@ -44,7 +44,7 @@ class _HomePState extends State<HomeP> {
                onTap: onItemSelected,
                labelColor: Colors.black,
                indicatorWeight: 4,
-               indicatorColor: Color(0XFFEF476F),
+               indicatorColor: Color(0XFF4CAF50),
                 tabs: [
                   Tab(text: 'ALL',),
                   Tab(text: 'MEN',),

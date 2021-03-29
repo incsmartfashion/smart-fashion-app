@@ -79,7 +79,7 @@ var platformChannelSpecifics = new NotificationDetails(
 	android: androidPlatformChannelSpecifics, 
 	iOS: iOSPlatformChannelSpecifics 
 ); 
-await flip.show(0, 'Smart Fashion', 
+await flip.show(0, 'Smart Market', 
 	'Click for new deals', 
 	platformChannelSpecifics, payload: 'Default_Sound'
 ); 
@@ -116,16 +116,17 @@ class _MyAppState extends State<MyApp> {
     return ScopedModel<MainModel>(
       model: _model,
       child: MaterialApp(
-        title: 'Smart Fashion',
+        title: 'Smart Market',
         debugShowCheckedModeBanner: false,
         theme: ThemeData(
             fontFamily: 'Raleway',
             brightness: Brightness.light,
-            primarySwatch: Colors.pink, 
+            //primarySwatch: Colors.pink, 
+            primarySwatch: Colors.green,
             accentColor: Colors.black,
             buttonColor: Colors.grey),
 
-         home: SplashScreen(title: 'Smart Fashion',),
+         home: SplashScreen(title: 'Smart Market',),
         routes: {
           '/homescreen': (BuildContext context) =>
               /*!_isAuthenticated ? AuthPage() :*/ ProductsPage(_model,_isAuthenticated),//no need for aunthentication

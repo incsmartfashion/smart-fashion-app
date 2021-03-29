@@ -27,7 +27,8 @@ dependencies:
   http:  
   shared_preferences: 
   rxdart: 
-  image_picker: 
+  image_picker: ^0.6.1+8
+  image_cropper: 
   mime: 
   url_launcher: 
   flutter_open_whatsapp:

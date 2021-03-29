@@ -116,8 +116,8 @@ void initState()  {
         child: Column(
       children: <Widget>[
         SwitchListTile(
-          inactiveTrackColor: Colors.black,
-          activeColor: Colors.blue,
+          inactiveTrackColor: Colors.red,
+          activeColor: Colors.green,
           value: _formData['acceptTerms'],
           onChanged: (bool 
           value) {
@@ -137,7 +137,7 @@ void initState()  {
                  MaterialPageRoute(builder: (context) => Terms()),
                 );
               },
-              child: Text('Vigezo na Masharti',style: TextStyle(color: Colors.red),
+              child: Text('Vigezo na Masharti',style: TextStyle(color: Colors.green),
         ),)
             ],
           ),
@@ -196,8 +196,8 @@ void initState()  {
           centerTitle: true,
           backgroundColor: Colors.grey[200],
           title: Text(
-            'Uza sasa na Smart Fashion',
-            style: TextStyle(color: Color(0XFFEF476F),fontWeight: FontWeight.bold),
+            'Uza sasa na Smart Market',
+            style: TextStyle(color: Color(0XFF4CAF50),fontWeight: FontWeight.bold),
           ),
         ),
 
@@ -231,7 +231,9 @@ void initState()  {
                           FlatButton(
                             //ni mungu tuu
                             child: Text(
-                                '${_authMode == AuthMode.Login ? 'Huna Akaunti? Fungua' : 'Ingia'}'),
+                                '${_authMode == AuthMode.Login ? 'Huna Akaunti? Fungua' : 'Ingia'}',
+                                 style: TextStyle(color: Colors.red)
+                                ),
                             onPressed: () {
                               setState(() {
                                 _authMode = _authMode == AuthMode.Login
